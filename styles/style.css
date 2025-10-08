@@ -6,7 +6,7 @@
 }
 
 html {
-  block-size: 100%;
+  height: 100%;
 }
 
 h1,
@@ -41,13 +41,13 @@ ul, ol {
 .page {
   display: grid;
   place-items: center;
+  min-height: 100vh;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   inline-size: 1200px;
-  block-size: 100%;
 }
 
 .content {
@@ -56,7 +56,6 @@ ul, ol {
   align-items: flex-end;
   gap: 30px;
   inline-size: 1140px;
-  margin: auto;
 }
 
 /* ЛЕВАЯ КОЛОНКА С ВИДЕО */
@@ -130,7 +129,6 @@ ul, ol {
 }
 
 .search-form__textfield {
-  min-inline-size: 225px;
   border: none;
   border-top: 1px solid #FFF;
   border-bottom: 1px solid #FFF;
@@ -140,8 +138,9 @@ ul, ol {
   font-weight: 400;
   font-size: 18px;
   background: transparent;
-  appearance: none;
   cursor: pointer;
+  min-inline-size: 225px;
+  appearance: none;
 }
 
 .search-form__textfield::placeholder {
@@ -186,9 +185,9 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding-right: 3px;
   overflow: auto;
   block-size: 298px;
-  padding-right: 3px;
 }
 
 .content__list {
@@ -246,8 +245,8 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
 }
 
 .content__video-card-title {
-  max-width: 196px;
   width: 100%;
+  max-width: 196px;
   overflow: hidden;
   font-family: 'Oswald', 'Arial', 'sans-serif';
   font-weight: 700;
